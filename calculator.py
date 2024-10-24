@@ -32,6 +32,7 @@ def calculator(num1, num2, operator):
     - If division by zero is attempted, the function prints an error message and does not return a result.
     - If an invalid operator is provided, the function prints an error message and does not return a result.
     """
+ 
     if operator == "+":
         result = num1 + num2
     elif operator == "-":
@@ -40,7 +41,8 @@ def calculator(num1, num2, operator):
         result = num1 * num2
     elif operator == "/":
         if num2 == 0:
-            result = "Cannot divide by 0"
+            print("Cannot divide by 0")
+            result = ""
         else:
             result = num1 / num2
     elif operator == "%":
@@ -54,11 +56,12 @@ def calculator(num1, num2, operator):
     elif operator == "<=":
         result = num1 <= num2
     else:
-        #print("Invalid operator.")
-        result = "Invalid operator"
-           
-    print(f"The result is: {result}")
-    
+        print("Invalid operator")
+        result = ""
+
+    if result != "":
+        print(f"The result is: {result}")
+
     return result
 
 ## Run the example

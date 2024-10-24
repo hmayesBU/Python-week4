@@ -34,25 +34,20 @@ def calculator(num1, num2, operator):
     """
     if operator == "+":
         result = num1 + num2
+    
     elif operator == "-":
         result = num1 - num2
 
-    # Insert your code here
+    # Function implementation here ...
 
     else:
-        result = "Invalid operator"
-           
+        print("Invalid operator.")
+
     print(f"The result is: {result}")
-    
+
     return result
 
 ## Run the example
 # calculator(4, 5, "*")  # Output: The result is: 20
 # calculator(10, 2, "/")  # Output: The result is: 5.0
 # calculator(7, 7, ">=")  # Output: The comparison result is: True
-
-calculator(4,5,"*")
-calculator(10,2,"/")
-calculator(7,7,">=")
-calculator(4,0,"/")
-calculator(3,6,"!")
