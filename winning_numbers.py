@@ -28,8 +28,29 @@ def winning_numbers(user_numbers, winning_numbers):
     """
 
     # Function implementation here ...
+    correct = 0
+
+    if user_numbers[0] in winning_numbers:
+        correct += 1
+    
+    if user_numbers[1] in winning_numbers:
+        correct += 1
+    
+    if user_numbers[2] in winning_numbers:
+        correct += 1
+    
+    prize_list = ["No", "Third", "Second", "First"]
+
+    prize = prize_list[correct]
 
     # Print the result
     print(f"Congratulations, you won {prize} prize!")
 
     return prize
+
+#test winning numbers
+
+winning_numbers([5,14,17], [5,14,6])
+winning_numbers([5,14,17], [5,14,17])
+winning_numbers([5,14,17], [5,1,6])
+winning_numbers([5,14,17], [2,1,6])
