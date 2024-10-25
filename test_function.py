@@ -21,15 +21,11 @@ def test_function(num1, num2):
     print("The second number is: ", num2)
 
     result = num1 + num2
-    print(result)
+
 
     return result
 
 #This is outside of the function - you can call it here>>
-print(test_function(1,2))
-print(test_function(1.5,2.6))
-print(test_function(100000,2232564684))
-print(test_function(-11,2))
-print(test_function(1.3,2)
+
 
             
